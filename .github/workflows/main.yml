@@ -39,7 +39,7 @@ jobs:
           brew install cmake pkg-config
           brew install wget git git-lfs
           brew install protobuf
-          pip install --upgrade setuptools
+          python -m pip install --upgrade pip
           python setup.py install --no DLIB_GIF_SUPPORT
 
       # run build command
