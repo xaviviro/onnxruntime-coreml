@@ -36,9 +36,9 @@ jobs:
       # install prerequisites
       - name: Preqrequisites
         run: |
-          arch -arm64 brew install cmake pkg-config
+          brew install cmake pkg-config
           brew install wget git git-lfs
-          arch -arm64 brew install protobuf
+          brew install protobuf
           python -m pip install --upgrade pip
 
       # run build command
