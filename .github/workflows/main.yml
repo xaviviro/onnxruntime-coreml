@@ -39,7 +39,8 @@ jobs:
           brew install cmake pkg-config
           brew install wget git git-lfs
           brew install protobuf
-          python -m pip install wheel setuptools pip --upgrade
+          pip install --upgrade setuptools
+          python setup.py install --no DLIB_GIF_SUPPORT
 
       # run build command
       - name: Build onnxruntime-silicon
