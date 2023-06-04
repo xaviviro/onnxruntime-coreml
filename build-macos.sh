@@ -20,7 +20,9 @@ pip install -r requirements-dev.txt
 
 # build
 ./build.sh --clean
-./build.sh --skip-keras-test --skip_tests --config "Release" --parallel 8 --enable_pybind --build_wheel --wheel_name_suffix=-silicon --osx_arch "arm64" --apple_deploy_target 11 --use_coreml
+#./build.sh --skip-keras-test --skip_tests --config "Release" --parallel 99 --enable_pybind --build_wheel --wheel_name_suffix=-silicon --osx_arch "arm64" --apple_deploy_target 13 --use_coreml
+#./build.sh --skip-keras-test --skip_tests --config MinSizeRel --parallel 99 --enable_pybind --build_wheel --wheel_name_suffix=-silicon --use_coreml --compile_no_warning_as_error --skip_submodule_sync --cmake_extra_defines CMAKE_OSX_ARCHITECTURES=arm64
+./build.sh --config Release --build_wheel --wheel_name_suffix=-silicon --use_coreml --compile_no_warning_as_error --cmake_extra_defines CMAKE_OSX_ARCHITECTURES=arm64
 
 # copy to dist
 mkdir -p "$dist_dir"
