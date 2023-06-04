@@ -20,8 +20,8 @@ jobs:
   build:
     strategy:
       matrix:
-        os: [ 'macos-12','macos-13' ]
-        python-version: [ '3.8', '3.9', '3.10', '3.11' ]
+        os: [ 'macos-13' ]
+        python-version: [ '3.10', '3.11' ]
   
     runs-on: ${{ matrix.os }}
 
@@ -39,6 +39,7 @@ jobs:
           brew install cmake pkg-config
           brew install wget git git-lfs
           brew install protobuf
+          python -m pip install wheel setuptools pip --upgrade
 
       # run build command
       - name: Build onnxruntime-silicon
