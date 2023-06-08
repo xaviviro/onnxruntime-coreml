@@ -1,8 +1,6 @@
 # [ONNX Runtime](https://github.com/microsoft/onnxruntime) for Apple M1/M2/ARM64 with CoreML support [![PyPI](https://img.shields.io/pypi/v/onnxruntime-coreml)](https://pypi.org/project/onnxruntime-coreml/)
 ONNX Runtime prebuilt wheels for Apple Silicon (M1 / M2 / ARM64)
 
-Based on work of @
-
 The official [ONNX Runtime](https://pypi.org/project/onnxruntime/1.15.0/#files) now contains `arm64` binaries for MacOS as well, but they do only support the CPU backend. This version adds the **CoreML** backend with version `v1.15.0`.
 
 ## Install
