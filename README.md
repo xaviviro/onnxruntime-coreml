@@ -1,13 +1,13 @@
-# [ONNX Runtime](https://github.com/microsoft/onnxruntime) for Apple Silicon [![PyPI](https://img.shields.io/pypi/v/onnxruntime-silicon)](https://pypi.org/project/onnxruntime-silicon/)
-ONNX Runtime prebuilt wheels for Apple Silicon (M1 / ARM64)
+# [ONNX Runtime](https://github.com/microsoft/onnxruntime) for Apple Silicon [![PyPI](https://img.shields.io/pypi/v/onnxruntime-coreml)](https://pypi.org/project/onnxruntime-coreml/)
+ONNX Runtime prebuilt wheels for Apple Silicon (M1 / M2 / ARM64)
 
-The official [ONNX Runtime](https://pypi.org/project/onnxruntime/1.13.1/#files) now contains `arm64` binaries for MacOS as well, but they do only support the CPU backend. This version adds the **CoreML** backend with version `v1.13.0`.
+The official [ONNX Runtime](https://pypi.org/project/onnxruntime/1.15.0/#files) now contains `arm64` binaries for MacOS as well, but they do only support the CPU backend. This version adds the **CoreML** backend with version `v1.15.0`.
 
 ## Install
-To install the prebuilt packages, use the following command to install. The package is called **onnxruntime-silicon** but is a drop-in-replacement for the onnxruntime package.
+To install the prebuilt packages, use the following command to install. The package is called **onnxruntime-coreml** but is a drop-in-replacement for the onnxruntime package.
 
 ```
-pip install onnxruntime-silicon
+pip install onnxruntime-coreml
 ```
 
 ## Build
@@ -25,3 +25,4 @@ The pre-built wheel packages should be in the `dist` directory.
 
 ## About
 MIT License - Copyright (c) 2022 Florian Bruggisser
+MIT License - Copyright (c) 2023 @Xaviviro

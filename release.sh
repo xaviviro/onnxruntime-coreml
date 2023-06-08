@@ -8,6 +8,5 @@ function build ()
     deactivate
 }
 
-build venv39
 build venv310
 build venv311
